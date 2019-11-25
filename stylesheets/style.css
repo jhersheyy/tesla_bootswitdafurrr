@@ -1,0 +1,172 @@
+#homepage{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: 
+        "sidebar banner"
+        "sidebar main"
+    ;
+    border: 5px groove blueviolet;
+    background-color: black;
+    height: minmax(100vh, auto);
+}
+
+#banner{
+    background-color: bisque;
+    grid-area: banner;
+}
+
+#sidebar{
+    background-color: aqua;
+    grid-area: sidebar;
+    padding-left: 10px;
+    color: slateblue;
+    line-height: 2em;
+}
+
+#main{
+    background-image: linear-gradient(palevioletred, white);
+    grid-area: main;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "pic pic desc desc"
+        "logo logo logo logo"
+        "cards cards cards cards"
+        "desc2 desc2 desc2 pic2"
+        "endp endp endp endp"
+    ;
+    height: minmax(100vh, auto);
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-indent: 25px;
+    padding: 10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 10px;
+}
+
+.pic{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+.medpic{
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+}
+
+.smallpic{
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+}
+
+.gif{
+    padding: 10px;
+    object-fit: scale-down;
+}
+.sblink{
+    text-align: center;
+    color: slateblue;
+}
+
+.selectedlink{
+    text-align: center;
+    color: rgb(104, 5, 170);
+    font-weight: 800;
+}
+
+.prettytext2{
+    background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#mainpic{
+    grid-area: pic;
+    border: 10px dotted pink;
+    margin: 20px;
+}
+
+#desc{
+    grid-area: desc;
+}
+
+#logo{
+    grid-area: logo;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cards{
+    grid-area: cards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#carelink{
+    border: 5px solid white;
+    border-radius: 10%;
+    background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
+    height: 400px;
+    width: 20%;
+
+}
+
+#blog1{
+    border: 5px solid white;
+    border-radius: 10%;
+    background-image: linear-gradient(to top left, white, aquamarine);
+    height: 400px;
+    width: 20%;
+}
+
+#blog2{
+    border: 5px solid white;
+    border-radius: 10%;
+    background-image: linear-gradient(to top left, white, plum);
+    height: 400px;
+    width: 20%;
+
+}
+
+#blog3{
+    border: 5px solid white;
+    border-radius: 10%;
+    background-image: linear-gradient(to top left, white, cornflowerblue);
+    height: 400px;
+    width: 20%;
+
+}
+
+#desc2{
+    grid-area: desc2;
+}
+
+#pic2{
+    grid-area: pic2;
+    padding-right: 20px;
+}
+
+#teslasfaves{
+    columns: 3;
+}
+
+#endp{
+    grid-area: endp;
+}
+#pic3{
+    padding-left: 20px;
+}
