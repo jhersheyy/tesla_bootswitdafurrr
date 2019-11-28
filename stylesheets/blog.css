@@ -6,9 +6,8 @@
     grid-template-areas: 
         "sidebar banner"
         "sidebar main"
+        "sidebar ft"
     ;
-    border: 5px groove blueviolet;
-    background-color: black;
     height: minmax(100vh, auto);
 }
 
@@ -36,6 +35,16 @@
     flex-direction: column;
 }
 
+#footer{
+    grid-area: ft;
+    height: 50px;;
+    width: minmax(100vh, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 2px solid darkgray;
+}
+
 a{
     text-decoration: none;
 }
@@ -47,6 +56,14 @@ p{
 
 h1,h2,h3,h4,h5,h6{
     padding: 10px;
+}
+
+.spaceoutft{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .pic{
@@ -66,6 +83,12 @@ h1,h2,h3,h4,h5,h6{
     margin: auto;
     padding: 10px;
 }
+
+.logopic{
+    width: 20px;
+    padding: 2px;
+}
+
 .gif{
     padding: 10px;
     object-fit: scale-down;
@@ -116,8 +139,22 @@ h1,h2,h3,h4,h5,h6{
     -webkit-text-fill-color: transparent;
 }
 
+.prettytext3{
+
+}
+
 .verticalspace{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.blurb{
+    width: 30%;
+}
+
+#iglink{
+    background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

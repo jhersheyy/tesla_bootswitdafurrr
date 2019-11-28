@@ -1,20 +1,22 @@
+/*anything smaller than 720px*/
 #homepage{
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-columns: 100px auto;
     grid-template-rows: 50px auto;
     grid-template-areas: 
         "sidebar banner"
         "sidebar main"
+        "sidebar ft"
     ;
-    border: 5px groove blueviolet;
-    background-color: black;
     height: minmax(100vh, auto);
+    width: auto;
 }
 
 #banner{
     background-color: bisque;
     grid-area: banner;
+    width: 100%;
 }
 
 #sidebar{
@@ -23,21 +25,36 @@
     padding-left: 10px;
     color: slateblue;
     line-height: 2em;
+    position: fixed;
+    height: 100%;
+    width: 100px;
 }
 
 #main{
     background-image: linear-gradient(palevioletred, white);
     grid-area: main;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-areas: 
-        "pic pic desc desc"
-        "logo logo logo logo"
-        "cards cards cards cards"
-        "desc2 desc2 desc2 pic2"
-        "endp endp endp endp"
+        "pic "
+        "desc"
+        "logo"
+        "cards"
+        "desc2"
+        "pic2"
+        "endp"
     ;
     height: minmax(100vh, auto);
+}
+
+#footer{
+    grid-area: ft;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 2px solid darkgray;
 }
 
 a{
@@ -47,10 +64,31 @@ a{
 p{
     text-indent: 25px;
     padding: 10px;
+    width: 80%;
 }
 
 h1,h2,h3,h4,h5,h6{
     padding: 10px;
+}
+
+button{
+    width: 100px;
+    font-size: 1em;
+    margin: auto;
+    padding: 5px;
+}
+
+text{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.spaceoutft{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .pic{
@@ -71,10 +109,17 @@ h1,h2,h3,h4,h5,h6{
     padding: 10px;
 }
 
+.logopic{
+    height: 1em;
+    width: auto;
+    padding: 2px;
+}
+
 .gif{
     padding: 10px;
     object-fit: scale-down;
 }
+
 .sblink{
     text-align: center;
     color: slateblue;
@@ -92,67 +137,92 @@ h1,h2,h3,h4,h5,h6{
     -webkit-text-fill-color: transparent;
 }
 
+.center{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.justifytext{
+    text-align: justify;
+}
+
+.minititle{
+    padding: 1px;
+    text-align: center;
+}
+
+.picborder{
+    border-radius: 10%;
+}
+
+.breederimg{
+    height: auto;
+    width: 300px;
+}
+
+.card{
+    border: 5px solid white;
+    border-radius: 10%;
+    height: 420px;
+    width: 250px;
+    margin: 15px;
+}
+
 #mainpic{
     grid-area: pic;
     border: 10px dotted pink;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:200px;
+    height: auto;
 }
 
 #desc{
     grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #logo{
     grid-area: logo;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    height: auto;
 }
 
 #cards{
     grid-area: cards;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #carelink{
-    border: 5px solid white;
-    border-radius: 10%;
     background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
-    height: 400px;
-    width: 20%;
-
 }
 
 #blog1{
-    border: 5px solid white;
-    border-radius: 10%;
     background-image: linear-gradient(to top left, white, aquamarine);
-    height: 400px;
-    width: 20%;
 }
 
 #blog2{
-    border: 5px solid white;
-    border-radius: 10%;
     background-image: linear-gradient(to top left, white, plum);
-    height: 400px;
-    width: 20%;
-
 }
 
 #blog3{
-    border: 5px solid white;
-    border-radius: 10%;
     background-image: linear-gradient(to top left, white, cornflowerblue);
-    height: 400px;
-    width: 20%;
-
 }
 
 #desc2{
     grid-area: desc2;
+    justify-content: center;
+    margin: 20px;
+    word-wrap: break-word;
 }
 
 #pic2{
@@ -161,12 +231,510 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #teslasfaves{
-    columns: 3;
+    columns: 1;
 }
 
 #endp{
     grid-area: endp;
+    margin: 15px;
 }
+
 #pic3{
-    padding-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 720px) and (max-width: 1280px) {
+    #homepage{
+        background-color: black;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 10em auto;
+        grid-template-rows: 50px auto;
+        grid-template-areas: 
+            "sidebar banner"
+            "sidebar main"
+            "sidebar ft"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #banner{
+        background-color: bisque;
+        grid-area: banner;
+    }
+
+    #sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 150px;
+    }
+
+    #main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: main;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "pic pic desc desc"
+            "logo logo logo logo"
+            "cards cards cards cards"
+            "desc2 desc2 desc2 pic2"
+            "endp endp endp endp"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #footer{
+        grid-area: ft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    p{
+        text-indent: 25px;
+        padding: 10px;
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+        padding: 10px;
+    }
+    
+    button{
+        width: 100px;
+        font-size: 1em;
+        margin: auto;
+        padding: 5px;
+    }
+    
+    text{
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    
+    .spaceoutft{
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    
+    .pic{
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .medpic{
+        width: 250px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .smallpic{
+        width: 150px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .logopic{
+        height: 1em;
+        width: auto;
+        padding: 2px;
+    }
+    
+    .gif{
+        padding: 10px;
+        object-fit: scale-down;
+    }
+    
+    .sblink{
+        text-align: center;
+        color: slateblue;
+    }
+    
+    .selectedlink{
+        text-align: center;
+        color: rgb(104, 5, 170);
+        font-weight: 800;
+    }
+    
+    .prettytext2{
+        background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .center{
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+    }
+    
+    .justifytext{
+        text-align: justify;
+    }
+    
+    .minititle{
+        padding: 1px;
+        text-align: center;
+    }
+    
+    .picborder{
+        border-radius: 10%;
+    }
+    
+    .breederimg{
+
+    }
+
+    #mainpic{
+        grid-area: pic;
+        border: 10px dotted pink;
+        margin: 20px;
+    }
+    
+    #desc{
+        grid-area: desc;
+    }
+    
+    #logo{
+        grid-area: logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #cards{
+        grid-area: cards;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #carelink{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
+        height: 420px;
+        width: 20%;
+    }
+    
+    #blog1{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, aquamarine);
+        height: 420px;
+        width: 20%;
+    }
+    
+    #blog2{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, plum);
+        height: 420px;
+        width: 20%;
+    }
+    
+    #blog3{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, cornflowerblue);
+        height: 420px;
+        width: 20%;
+    
+    }
+    
+    #desc2{
+        grid-area: desc2;
+    }
+    
+    #pic2{
+        grid-area: pic2;
+        padding-right: 20px;
+    }
+    
+    #teslasfaves{
+        columns: 3;
+    }
+    
+    #endp{
+        grid-area: endp;
+    }
+    
+    #pic3{
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1280px){
+    #homepage{
+        background-color: green;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 10em auto;
+        grid-template-rows: 50px auto;
+        grid-template-areas: 
+            "sidebar banner"
+            "sidebar main"
+            "sidebar ft"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #banner{
+        background-color: bisque;
+        grid-area: banner;
+    }
+
+    #sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 150px;
+    }
+
+    #main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: main;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "pic pic desc desc"
+            "logo logo logo logo"
+            "cards cards cards cards"
+            "desc2 desc2 desc2 pic2"
+            "endp endp endp endp"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #footer{
+        grid-area: ft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    p{
+        text-indent: 25px;
+        padding: 10px;
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+        padding: 10px;
+    }
+    
+    button{
+        width: 100px;
+        font-size: 1em;
+        margin: auto;
+        padding: 5px;
+    }
+    
+    text{
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    
+    .spaceoutft{
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    
+    .pic{
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .medpic{
+        width: 250px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .smallpic{
+        width: 150px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .logopic{
+        height: 1em;
+        width: auto;
+        padding: 2px;
+    }
+    
+    .gif{
+        padding: 10px;
+        object-fit: scale-down;
+    }
+    
+    .sblink{
+        text-align: center;
+        color: slateblue;
+    }
+    
+    .selectedlink{
+        text-align: center;
+        color: rgb(104, 5, 170);
+        font-weight: 800;
+    }
+    
+    .prettytext2{
+        background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .center{
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+    }
+    
+    .justifytext{
+        text-align: justify;
+    }
+    
+    .minititle{
+        padding: 1px;
+        text-align: center;
+    }
+    
+    .picborder{
+        border-radius: 10%;
+    }
+
+    .breederimg{
+
+    }
+    
+    #mainpic{
+        grid-area: pic;
+        border: 10px dotted pink;
+        margin: 20px;
+    }
+    
+    #desc{
+        grid-area: desc;
+    }
+    
+    #logo{
+        grid-area: logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #cards{
+        grid-area: cards;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #carelink{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
+        height: 420px;
+        width: 20%;
+    }
+    
+    #blog1{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, aquamarine);
+        height: 420px;
+        width: 20%;
+    }
+    
+    #blog2{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, plum);
+        height: 420px;
+        width: 20%;
+    }
+    
+    #blog3{
+        border: 5px solid white;
+        border-radius: 10%;
+        background-image: linear-gradient(to top left, white, cornflowerblue);
+        height: 420px;
+        width: 20%;
+    
+    }
+    
+    #desc2{
+        grid-area: desc2;
+    }
+    
+    #pic2{
+        grid-area: pic2;
+        padding-right: 20px;
+    }
+    
+    #teslasfaves{
+        columns: 3;
+    }
+    
+    #endp{
+        grid-area: endp;
+    }
+    
+    #pic3{
+        padding-left: 20px;
+    }
 }

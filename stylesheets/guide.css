@@ -6,9 +6,8 @@
     grid-template-areas: 
         "sidebar banner"
         "sidebar main"
+        "sidebar ft"
     ;
-    border: 5px groove blueviolet;
-    background-color: black;
     height: minmax(100vh, auto);
 }
 
@@ -34,6 +33,16 @@
     height: minmax(100vh, auto);
 }
 
+#footer{
+    grid-area: ft;
+    height: 50px;;
+    width: minmax(100vh, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 2px solid darkgray;
+}
+
 a{
     text-decoration: none;
 }
@@ -47,6 +56,14 @@ h1,h2,h3,h4,h5,h6{
     padding: 10px;
 }
 
+.spaceoutft{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
 .pic{
     width: 300px;
     margin: auto;
@@ -57,6 +74,12 @@ h1,h2,h3,h4,h5,h6{
     width: 150px;
     margin: auto;
     padding: 10px;
+}
+
+.logopic{
+    height: 1em;
+    width: auto;
+    padding: 2px;
 }
 
 .gif{
