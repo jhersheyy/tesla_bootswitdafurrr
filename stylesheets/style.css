@@ -1,4 +1,4 @@
-/*anything smaller than 720px*/
+/*SMALLEST SIZED SCREENS: anything smaller than 720px*/
 #homepage{
     display: grid;
     grid-gap: 15px;
@@ -245,27 +245,20 @@ text{
     margin-right: auto;
 }
 
-
-
-
-
-
-
-
-
-@media (min-width: 720px) and (max-width: 1280px) {
+/*MEDIUM SIZED SCREENS*/
+@media (min-width: 720px) and (max-width: 950px) {
     #homepage{
-        background-color: black;
         display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 10em auto;
-        grid-template-rows: 50px auto;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 75px auto;
         grid-template-areas: 
             "sidebar banner"
             "sidebar main"
             "sidebar ft"
         ;
         height: minmax(100vh, auto);
+        width: 100vw;
     }
 
     #banner{
@@ -281,7 +274,7 @@ text{
         line-height: 2em;
         position: fixed;
         height: 100%;
-        width: 150px;
+        width: 90px;
     }
 
     #main{
@@ -291,7 +284,9 @@ text{
         grid-gap: 20px;
         grid-template-areas: 
             "pic pic desc desc"
+            "desc desc desc desc"
             "logo logo logo logo"
+            "cards cards cards cards"
             "cards cards cards cards"
             "desc2 desc2 desc2 pic2"
             "endp endp endp endp"
@@ -308,6 +303,7 @@ text{
         justify-content: flex-end;
         border-top: 2px solid darkgray;
     }
+
     a{
         text-decoration: none;
     }
@@ -315,6 +311,7 @@ text{
     p{
         text-indent: 25px;
         padding: 10px;
+        width: 80vw;
     }
     
     h1,h2,h3,h4,h5,h6{
@@ -331,7 +328,6 @@ text{
     text{
         padding-left: 10px;
         padding-right: 10px;
-    
     }
     
     .spaceoutft{
@@ -408,13 +404,22 @@ text{
     }
     
     .breederimg{
+        width: 500px;
+    }
 
+    .card{
+        border: 5px solid white;
+        border-radius: 10%;
+        height: 400px;
+        width: 42%;
+        margin: 15px;
     }
 
     #mainpic{
         grid-area: pic;
-        border: 10px dotted pink;
-        margin: 20px;
+        border: 15px dotted pink;
+        margin: 20px auto 5px;
+        width: 50%;
     }
     
     #desc{
@@ -432,40 +437,25 @@ text{
         grid-area: cards;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
     }
     
     #carelink{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
-        height: 420px;
-        width: 20%;
     }
     
     #blog1{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, aquamarine);
-        height: 420px;
-        width: 20%;
     }
     
     #blog2{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, plum);
-        height: 420px;
-        width: 20%;
     }
     
     #blog3{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, cornflowerblue);
-        height: 420px;
-        width: 20%;
-    
     }
     
     #desc2{
@@ -487,34 +477,24 @@ text{
     
     #pic3{
         padding-left: 20px;
+        margin: initial;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1280px){
+/*LARGEST SCREEN SIZE*/
+@media (min-width: 950px) {
     #homepage{
-        background-color: green;
         display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 10em auto;
-        grid-template-rows: 50px auto;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 75px auto;
         grid-template-areas: 
             "sidebar banner"
             "sidebar main"
             "sidebar ft"
         ;
         height: minmax(100vh, auto);
+        width: 100vw;
     }
 
     #banner{
@@ -530,14 +510,14 @@ text{
         line-height: 2em;
         position: fixed;
         height: 100%;
-        width: 150px;
+        width: 90px;
     }
 
     #main{
         background-image: linear-gradient(palevioletred, white);
         grid-area: main;
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 15px;
         grid-template-areas: 
             "pic pic desc desc"
             "logo logo logo logo"
@@ -557,6 +537,7 @@ text{
         justify-content: flex-end;
         border-top: 2px solid darkgray;
     }
+    
     a{
         text-decoration: none;
     }
@@ -564,6 +545,7 @@ text{
     p{
         text-indent: 25px;
         padding: 10px;
+        width: 85%;
     }
     
     h1,h2,h3,h4,h5,h6{
@@ -580,7 +562,6 @@ text{
     text{
         padding-left: 10px;
         padding-right: 10px;
-    
     }
     
     .spaceoutft{
@@ -655,19 +636,31 @@ text{
     .picborder{
         border-radius: 10%;
     }
-
-    .breederimg{
-
-    }
     
+    .breederimg{
+        width: 550px;
+    }
+
+    .card{
+        border: 5px solid white;
+        border-radius: 10%;
+        height: 500px;
+        width: 22%;
+        margin: 15px;
+    }
+
     #mainpic{
         grid-area: pic;
         border: 10px dotted pink;
-        margin: 20px;
+        margin: 20px 25px 0px;
+        width: 80%;
     }
     
     #desc{
         grid-area: desc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     #logo{
@@ -681,40 +674,24 @@ text{
         grid-area: cards;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-content: center;
     }
     
     #carelink{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
-        height: 420px;
-        width: 20%;
     }
     
     #blog1{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, aquamarine);
-        height: 420px;
-        width: 20%;
     }
     
     #blog2{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, plum);
-        height: 420px;
-        width: 20%;
     }
     
     #blog3{
-        border: 5px solid white;
-        border-radius: 10%;
         background-image: linear-gradient(to top left, white, cornflowerblue);
-        height: 420px;
-        width: 20%;
-    
     }
     
     #desc2{
@@ -728,6 +705,7 @@ text{
     
     #teslasfaves{
         columns: 3;
+        column-gap: 50px;
     }
     
     #endp{
@@ -736,5 +714,6 @@ text{
     
     #pic3{
         padding-left: 20px;
+        margin: initial;
     }
 }
