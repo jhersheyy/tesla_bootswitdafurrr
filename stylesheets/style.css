@@ -3,7 +3,7 @@
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 100px auto;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 75px auto;
     grid-template-areas: 
         "sidebar banner"
         "sidebar main"
@@ -17,6 +17,7 @@
     background-color: bisque;
     grid-area: banner;
     width: 100%;
+    height: 75px;
 }
 
 #sidebar{
@@ -27,7 +28,7 @@
     line-height: 2em;
     position: fixed;
     height: 100%;
-    width: 100px;
+    width: 90px;
 }
 
 #main{
@@ -36,7 +37,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-areas: 
-        "pic "
+        "pic"
         "desc"
         "logo"
         "cards"
@@ -57,6 +58,10 @@
     border-top: 2px solid darkgray;
 }
 
+*{
+    font-family: 'Sulphur Point', sans-serif;
+}
+
 a{
     text-decoration: none;
 }
@@ -66,8 +71,17 @@ p{
     padding: 10px;
     width: 80%;
 }
+strong{
+    font-weight: 1000;
+    background-color: rgba(146, 92, 182, 0.5)
+}
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
     padding: 10px;
 }
 
@@ -76,11 +90,23 @@ button{
     font-size: 1em;
     margin: auto;
     padding: 5px;
+    background-color: rgba(255,255,255,.5)
 }
 
 text{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+
+.buttoncontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right:20%;
+    left: 20%; 
 }
 
 .spaceoutft{
@@ -126,6 +152,7 @@ text{
 }
 
 .selectedlink{
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     color: rgb(104, 5, 170);
     font-weight: 800;
@@ -156,6 +183,10 @@ text{
     border-radius: 10%;
 }
 
+.buttonborder{
+    border-radius: 15%;
+}
+
 .breederimg{
     height: auto;
     width: 300px;
@@ -167,6 +198,7 @@ text{
     height: 420px;
     width: 250px;
     margin: 15px;
+    position: relative;
 }
 
 #mainpic{
@@ -246,24 +278,27 @@ text{
 }
 
 /*MEDIUM SIZED SCREENS*/
-@media (min-width: 720px) and (max-width: 950px) {
+@media (min-width: 720px) and (max-width: 977px) {
     #homepage{
         display: grid;
         grid-gap: 15px;
         grid-template-columns: 100px auto;
-        grid-template-rows: 75px auto;
+        grid-template-rows: 100px auto;
         grid-template-areas: 
             "sidebar banner"
             "sidebar main"
             "sidebar ft"
         ;
         height: minmax(100vh, auto);
-        width: 100vw;
+        width: auto;
     }
+    
 
     #banner{
         background-color: bisque;
         grid-area: banner;
+        width: 100%;
+        height: 100px;
     }
 
     #sidebar{
@@ -296,8 +331,8 @@ text{
 
     #footer{
         grid-area: ft;
-        height: 50px;;
-        width: minmax(100vh, auto);
+        height: 50px;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -311,10 +346,15 @@ text{
     p{
         text-indent: 25px;
         padding: 10px;
-        width: 80vw;
+        width: 80%;
     }
     
-    h1,h2,h3,h4,h5,h6{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
         padding: 10px;
     }
     
@@ -331,7 +371,7 @@ text{
     }
     
     .spaceoutft{
-        width: 20%;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -404,13 +444,13 @@ text{
     }
     
     .breederimg{
-        width: 500px;
+        width: 450px;
     }
 
     .card{
         border: 5px solid white;
         border-radius: 10%;
-        height: 400px;
+        height: 435px;
         width: 42%;
         margin: 15px;
     }
@@ -424,6 +464,10 @@ text{
     
     #desc{
         grid-area: desc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
     
     #logo{
@@ -460,11 +504,15 @@ text{
     
     #desc2{
         grid-area: desc2;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     
     #pic2{
+        margin-top: 0px;
         grid-area: pic2;
         padding-right: 20px;
+        width: 30%;
     }
     
     #teslasfaves{
@@ -482,24 +530,26 @@ text{
 }
 
 /*LARGEST SCREEN SIZE*/
-@media (min-width: 950px) {
+@media (min-width: 978px) {
     #homepage{
         display: grid;
         grid-gap: 15px;
         grid-template-columns: 100px auto;
-        grid-template-rows: 75px auto;
+        grid-template-rows: 120px auto;
         grid-template-areas: 
             "sidebar banner"
             "sidebar main"
             "sidebar ft"
         ;
         height: minmax(100vh, auto);
-        width: 100vw;
+        width: auto;
     }
 
     #banner{
         background-color: bisque;
         grid-area: banner;
+        width: 100%;
+        height: 120px;
     }
 
     #sidebar{
@@ -530,8 +580,8 @@ text{
 
     #footer{
         grid-area: ft;
-        height: 50px;;
-        width: minmax(100vh, auto);
+        height: 50px;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -548,7 +598,12 @@ text{
         width: 85%;
     }
     
-    h1,h2,h3,h4,h5,h6{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
         padding: 10px;
     }
     
@@ -565,7 +620,7 @@ text{
     }
     
     .spaceoutft{
-        width: 20%;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -645,7 +700,7 @@ text{
         border: 5px solid white;
         border-radius: 10%;
         height: 500px;
-        width: 22%;
+        width: 20%;
         margin: 15px;
     }
 
@@ -701,6 +756,7 @@ text{
     #pic2{
         grid-area: pic2;
         padding-right: 20px;
+        width: 200px;
     }
     
     #teslasfaves{

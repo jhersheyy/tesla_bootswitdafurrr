@@ -1,8 +1,9 @@
+/*SMALLEST SIZED SCREEN*/
 #homepage{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 10em auto;
-    grid-template-rows: 50px auto;
+    grid-gap: 15px;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 75px auto;
     grid-template-areas: 
         "sidebar banner"
         "sidebar main"
@@ -14,6 +15,8 @@
 #banner{
     background-color: bisque;
     grid-area: banner;
+    width: 100%;
+    height: 75px;
 }
 
 #sidebar{
@@ -24,7 +27,7 @@
     line-height: 2em;
     position: fixed;
     height: 100%;
-    width: 150px;
+    width: 90px;
 }
 
 #main{
@@ -45,6 +48,10 @@
     border-top: 2px solid darkgray;
 }
 
+*{
+    font-family: 'Sulphur Point', sans-serif;
+}
+
 a{
     text-decoration: none;
 }
@@ -54,12 +61,28 @@ p{
     padding: 10px;
 }
 
-h1,h2,h3,h4,h5,h6{
+strong{
+    font-weight: 1000;
+    background-color: rgba(146, 92, 182, 0.5)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
     padding: 10px;
 }
 
+blockquote{
+    background-color: rgba(255, 255, 255, .5);
+    color: purple;
+    padding: 10px;
+    font-family: 'Amatic SC', cursive;
+}
 .spaceoutft{
-    width: 20%;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -67,19 +90,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .pic{
-    width: 300px;
+    width: 125px;
     margin: auto;
     padding: 10px;
 }
 
 .medpic{
-    width: 250px;
+    width: 100px;
     margin: auto;
     padding: 10px;
 }
 
 .smallpic{
-    width: 150px;
+    width: 75px;
     margin: auto;
     padding: 10px;
 }
@@ -99,9 +122,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .selectedlink{
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     color: rgb(104, 5, 170);;
     font-weight: 800;
+}
+
+.imgcontainer4{
+    margin-left: 75px;
+    margin-right: auto;
 }
 
 .imgcontainer3{
@@ -119,7 +148,9 @@ h1,h2,h3,h4,h5,h6{
 .imgcontainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .manualindent{
@@ -139,8 +170,8 @@ h1,h2,h3,h4,h5,h6{
     -webkit-text-fill-color: transparent;
 }
 
-.prettytext3{
-
+.centered{
+    text-align: center;
 }
 
 .verticalspace{
@@ -150,11 +181,399 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .blurb{
-    width: 30%;
+    width: 70%;
 }
 
 #iglink{
     background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/*MEDIUM SIZED SCREENS*/
+@media (min-width: 720px) and (max-width: 950px) {
+    #homepage{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+            "sidebar banner"
+            "sidebar main"
+            "sidebar ft"
+        ;
+        height: minmax(100vh, auto);
+    }
+    
+    #banner{
+        background-color: bisque;
+        grid-area: banner;
+        width: 100%;
+        height: 100px;
+    }
+
+    #sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 90px;
+    }
+
+    #main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: main;
+        height: minmax(100vh, auto);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer{
+        grid-area: ft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        text-indent: 25px;
+        padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        padding: 10px;
+    }
+
+    .spaceoutft{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .pic{
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .medpic{
+        width: 150px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .smallpic{
+        width: 100px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .logopic{
+        width: 20px;
+        padding: 2px;
+    }
+
+    .gif{
+        padding: 10px;
+        object-fit: scale-down;
+    }
+
+    .sblink{
+        text-align: center;
+        color: slateblue;
+    }
+
+    .selectedlink{
+        text-align: center;
+        color: rgb(104, 5, 170);;
+        font-weight: 800;
+    }
+
+    .imgcontainer4{
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .imgcontainer3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgcontainer2{
+        display: flex;
+        flex-direction: row;
+        margin-left: 25px;
+        margin-right: auto;
+    }
+    
+    .imgcontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .manualindent{
+        padding-left: 25px;
+    }
+
+    .bicol{
+        columns: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .prettytext{
+        background: -webkit-repeating-linear-gradient(left, rgb(175, 19, 19), #f3657d, rgb(179, 131, 27));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+   .prettytext3{
+
+    }
+
+    .verticalspace{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blurb{
+        width: 50%;
+    }
+
+    #iglink{
+        background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+
+
+/*LARGEST SIZED SCREENS*/
+@media (min-width: 951px){
+    #homepage{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 120px auto;
+        grid-template-areas: 
+            "sidebar banner"
+            "sidebar main"
+            "sidebar ft"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #banner{
+        background-color: bisque;
+        grid-area: banner;
+        width: 100%;
+        height: 120px;
+    }
+
+    #sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 90px;
+    }
+
+    #main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: main;
+        height: minmax(100vh, auto);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer{
+        grid-area: ft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+
+    /*specific format for about us page after 950px*/
+    #aboutpage{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "atext social"
+            "apic social"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #atext{
+        grid-area: atext;
+        text-align: center;
+        
+    }
+
+    #apic{
+        grid-area: apic;
+    }
+
+    #social{
+        grid-area: social;
+        margin: 10px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        text-indent: 25px;
+        padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        padding: 10px;
+    }
+
+    .spaceoutft{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .pic{
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .medpic{
+        width: 250px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .smallpic{
+        width: 150px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .logopic{
+        width: 20px;
+        padding: 2px;
+    }
+
+    .gif{
+        padding: 10px;
+        object-fit: scale-down;
+    }
+    .sblink{
+        text-align: center;
+        color: slateblue;
+    }
+
+    .selectedlink{
+        text-align: center;
+        color: rgb(104, 5, 170);;
+        font-weight: 800;
+    }
+
+    .imgcontainer4{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgcontainer3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgcontainer2{
+        display: flex;
+        flex-direction: row;
+        margin-left: 25px;
+        margin-right: auto;
+    }
+    
+    .imgcontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .manualindent{
+        padding-left: 25px;
+    }
+
+    .bicol{
+        columns: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .prettytext{
+        background: -webkit-repeating-linear-gradient(left, rgb(175, 19, 19), #f3657d, rgb(179, 131, 27));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .prettytext3{
+
+    }
+
+    .verticalspace{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blurb{
+        text-align: justify;
+        margin: auto;
+    }
+
+    #iglink{
+        background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
