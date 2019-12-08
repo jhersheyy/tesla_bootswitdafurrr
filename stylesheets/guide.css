@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Sulphur+Point&display=swap');
 
 /*SMALLEST SIZED SCREENS*/
-#homepage{
+#g_homepage{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 10em auto;
@@ -14,14 +14,14 @@
     height: minmax(100vh, auto);
 }
 
-#banner{
+#g_banner{
     background-color: bisque;
     grid-area: banner;
     width: 100%;
     height: 75px;
 }
 
-#sidebar{
+#g_sidebar{
     background-color: aqua;
     grid-area: sidebar;
     padding-left: 10px;
@@ -32,13 +32,13 @@
     width: 150px;
 }
 
-#main{
+#g_main{
     background-image: linear-gradient(palevioletred, white);
     grid-area: main;
     height: minmax(100vh, auto);
 }
 
-#footer{
+#g_footer{
     grid-area: ft;
     height: 50px;
     display: flex;
@@ -58,7 +58,6 @@ a{
 p{
     text-indent: 25px;
     padding: 10px;
-    width: 80%;
 }
 
 strong{
@@ -75,7 +74,7 @@ h6{
     padding: 10px;
 }
 
-.spaceoutft{
+.g_spaceoutft{
     width: auto;
     display: flex;
     flex-direction: row;
@@ -83,52 +82,52 @@ h6{
     padding: 10px;
 }
 
-.pic{
+.g_pic{
     width: 250px;
     margin: auto;
     padding: 10px;
 }
 
-.smallpic{
+.g_smallpic{
     width: 75px;
     margin: auto;
     padding: 5px;
 }
 
-.logopic{
+.g_logopic{
     height: 1em;
     width: auto;
     padding: 2px;
 }
 
-.gif{
+.g_gif{
     padding: 10px;
     object-fit: scale-down;
 }
 
-.sblink{
+.g_sblink{
     text-align: center;
     color: slateblue;
 }
 
-.selectedlink{
+.g_selectedlink{
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     color: rgb(104, 5, 170);;
     font-weight: 800;
 }
  
-.imgcontainer{
+.g_imgcontainer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.manualindent{
+.g_manualindent{
     padding-left: 25px;
 }
 
-.bicol{
+.g_bicol{
     columns: 1;
     display: flex;
     flex-direction: column;
@@ -137,75 +136,75 @@ h6{
     padding-right: 10px;
 }
 
-.prettytext{
+.g_prettytext{
     background: -webkit-repeating-linear-gradient(left, rgb(175, 19, 19), #f3657d, rgb(250, 195, 78));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.verticalspace{
+.g_verticalspace{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.underline{
+.g_underline{
     text-decoration: underline;
 }
 
-.contained{
+.g_contained{
     width:85%;
 }
 
-.sched{
+.g_sched{
     border: 10px ridge rgb(255, 169, 209);
     padding-top: 5px;
     padding-bottom: 5px;
     margin:15px;
 }
 
-#dailyschedule{
+#g_dailyschedule{
 }
 
-#eating{
-
-}
-
-#bathroom{
+#g_eating{
 
 }
 
-#downtime{
+#g_bathroom{
 
 }
 
-#training{
+#g_downtime{
 
 }
 
-#playing{
+#g_training{
 
 }
 
-#homealone{
+#g_playing{
 
 }
 
-#cleaning{
+#g_homealone{
 
 }
 
-#bedtime{
+#g_cleaning{
 
 }
 
-#maintenance{
+#g_bedtime{
+
+}
+
+#g_maintenance{
 
 }
 
 /*MEDIUM SIZED SCREENS*/
 @media (min-width: 720px) and (max-width: 950px) {
-    #homepage{
+    #g_homepage{
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 10em auto;
@@ -218,14 +217,14 @@ h6{
         height: minmax(100vh, auto);
     }
     
-    #banner{
+    #g_banner{
         background-color: bisque;
         grid-area: banner;
         width: 100%;
         height: 100px;
     }
     
-    #sidebar{
+    #g_sidebar{
         background-color: aqua;
         grid-area: sidebar;
         padding-left: 10px;
@@ -236,13 +235,13 @@ h6{
         width: 150px;
     }
     
-    #main{
+    #g_main{
         background-image: linear-gradient(palevioletred, white);
         grid-area: main;
         height: minmax(100vh, auto);
     }
     
-    #footer{
+    #g_footer{
         grid-area: ft;
         height: 50px;;
         display: flex;
@@ -258,7 +257,6 @@ h6{
     p{
         text-indent: 25px;
         padding: 10px;
-        width: 80%;
     }
     
     h1,
@@ -270,7 +268,7 @@ h6{
         padding: 10px;
     }
     
-    .spaceoutft{
+    .g_spaceoutft{
         width: auto;
         display: flex;
         flex-direction: row;
@@ -278,74 +276,74 @@ h6{
         padding: 20px;
     }
     
-    .pic{
+    .g_pic{
         width: 300px;
         margin: auto;
         padding: 10px;
     }
     
-    .smallpic{
+    .g_smallpic{
         width: 120px;
         margin: auto;
         padding: 10px;
     }
     
-    .logopic{
+    .g_logopic{
         height: 1em;
         width: auto;
         padding: 2px;
     }
     
-    .gif{
+    .g_gif{
         padding: 10px;
         object-fit: scale-down;
     }
     
-    .sblink{
+    .g_sblink{
         text-align: center;
         color: slateblue;
     }
     
-    .selectedlink{
+    .g_selectedlink{
         text-align: center;
         color: rgb(104, 5, 170);;
         font-weight: 800;
     }
      
-    .imgcontainer{
+    .g_imgcontainer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     
-    .manualindent{
+    .g_manualindent{
         padding-left: 25px;
     }
     
-    .bicol{
+    .g_bicol{
         columns: 2;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     
-    .prettytext{
+    .g_prettytext{
         background: -webkit-repeating-linear-gradient(left, rgb(175, 19, 19), #f3657d, rgb(250, 195, 78));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     
-    .verticalspace{
+    .g_verticalspace{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     
-    .underline{
+    .g_underline{
         text-decoration: underline;
     }
     
-    .sched{
+    .g_sched{
         border: 10px ridge rgb(255, 169, 209);
         padding-top: 5px;
         padding-bottom: 5px;
@@ -353,50 +351,50 @@ h6{
         padding-left: 20px;
     }
     
-    #dailyschedule{
+    #g_dailyschedule{
     
     }
     
-    #eating{
+    #g_eating{
     
     }
     
-    #bathroom{
+    #g_bathroom{
     
     }
     
-    #downtime{
+    #g_downtime{
     
     }
     
-    #training{
+    #g_training{
     
     }
     
-    #playing{
+    #g_playing{
     
     }
     
-    #homealone{
+    #g_homealone{
     
     }
     
-    #cleaning{
+    #g_cleaning{
     
     }
     
-    #bedtime{
+    #g_bedtime{
     
     }
     
-    #maintenance{
+    #g_maintenance{
     
     }
 }
 
 /*LARGEST SIZED SCREENS*/
 @media (min-width: 951px){
-    #homepage{
+    #g_homepage{
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 10em auto;
@@ -409,14 +407,14 @@ h6{
         height: minmax(100vh, auto);
     }
     
-    #banner{
+    #g_banner{
         background-color: bisque;
         grid-area: banner;
         width: 100%;
         height: 120px;
     }
     
-    #sidebar{
+    #g_sidebar{
         background-color: aqua;
         grid-area: sidebar;
         padding-left: 10px;
@@ -427,13 +425,13 @@ h6{
         width: 150px;
     }
     
-    #main{
+    #g_main{
         background-image: linear-gradient(palevioletred, white);
         grid-area: main;
         height: minmax(100vh, auto);
     }
     
-    #footer{
+    #g_footer{
         grid-area: ft;
         height: 50px;;
         width: minmax(100vh, auto);
@@ -450,7 +448,7 @@ h6{
     p{
         text-indent: 25px;
         padding: 10px;
-        width: 80%;
+        width: 90%;
     }
     
     h1,
@@ -462,7 +460,7 @@ h6{
         padding: 10px;
     }
     
-    .spaceoutft{
+    .g_spaceoutft{
         width: auto;
         display: flex;
         flex-direction: row;
@@ -470,74 +468,74 @@ h6{
         padding: 20px;
     }
     
-    .pic{
+    .g_pic{
         width: 300px;
         margin: auto;
         padding: 10px;
     }
     
-    .smallpic{
+    .g_smallpic{
         width: 160px;
         margin: auto;
         padding: 10px;
     }
     
-    .logopic{
+    .g_logopic{
         height: 1em;
         width: auto;
         padding: 2px;
     }
     
-    .gif{
+    .g_gif{
         padding: 10px;
         object-fit: scale-down;
     }
     
-    .sblink{
+    .g_sblink{
         text-align: center;
         color: slateblue;
     }
     
-    .selectedlink{
+    .g_selectedlink{
         text-align: center;
         color: rgb(104, 5, 170);
         font-weight: 800;
     }
         
-    .imgcontainer{
+    .g_imgcontainer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     
-    .manualindent{
+    .g_manualindent{
         padding-left: 25px;
     }
     
-    .bicol{
+    .g_bicol{
         columns: 2;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     
-    .prettytext{
+    .g_prettytext{
         background: -webkit-repeating-linear-gradient(left, rgb(175, 19, 19), #f3657d, rgb(250, 195, 78));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     
-    .verticalspace{
+    .g_verticalspace{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     
-    .underline{
+    .g_underline{
         text-decoration: underline;
     }
     
-    .sched{
+    .g_sched{
         border: 10px ridge rgb(255, 169, 209);
         padding-top: 5px;
         padding-bottom: 5px;
@@ -545,43 +543,43 @@ h6{
         padding-left: 20px;
     }
     
-    #dailyschedule{
+    #g_dailyschedule{
     
     }
     
-    #eating{
+    #g_eating{
     
     }
     
-    #bathroom{
+    #g_bathroom{
     
     }
     
-    #downtime{
+    #g_downtime{
     
     }
     
-    #training{
+    #g_training{
     
     }
     
-    #playing{
+    #g_playing{
     
     }
     
-    #homealone{
+    #g_homealone{
     
     }
     
-    #cleaning{
+    #g_cleaning{
     
     }
     
-    #bedtime{
+    #g_bedtime{
     
     }
     
-    #maintenance{
+    #g_maintenance{
     
     }
 }

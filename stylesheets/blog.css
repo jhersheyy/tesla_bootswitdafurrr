@@ -458,6 +458,7 @@ blockquote{
     p{
         text-indent: 25px;
         padding: 10px;
+        width: 90%
     }
 
     h1,
