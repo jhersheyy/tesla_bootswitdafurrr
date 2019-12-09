@@ -27,11 +27,6 @@
     padding: 2px;
 }
 
-.g_gif{
-    padding: 10px;
-    object-fit: scale-down;
-}
-
 .g_sblink{
     text-align: center;
     color: slateblue;
@@ -77,6 +72,14 @@
 
 .g_underline{
     text-decoration: underline;
+}
+
+.g_bold{
+    font-weight: 700;
+}
+
+.g_italic{
+    font-style: italic;
 }
 
 .g_contained{
@@ -155,11 +158,6 @@
         height: 1em;
         width: auto;
         padding: 2px;
-    }
-    
-    .g_gif{
-        padding: 10px;
-        object-fit: scale-down;
     }
     
     .g_sblink{
@@ -281,11 +279,6 @@
         height: 1em;
         width: auto;
         padding: 2px;
-    }
-    
-    .g_gif{
-        padding: 10px;
-        object-fit: scale-down;
     }
     
     .g_sblink{
