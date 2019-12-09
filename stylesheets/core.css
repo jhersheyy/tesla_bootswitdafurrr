@@ -1,0 +1,698 @@
+/*SMALLEST SIZED SCREENS: anything smaller than 720px*/
+/*small screen tag styling*/
+*{
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-indent: 25px;
+    padding: 10px;
+}
+
+strong{
+    font-weight: 1000;
+    background-color: rgba(146, 92, 182, 0.5)
+}
+
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    padding: 10px;
+}
+
+button{
+    width: 100px;
+    font-size: 1em;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(255,255,255,.5)
+}
+
+text{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+blockquote{
+    background-color: rgba(255, 255, 255, .5);
+    color: purple;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/*index page styling*/
+#homepage{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 75px auto;
+    grid-template-areas: 
+        "sidebar banner"
+        "sidebar main"
+        "sidebar ft"
+    ;
+    height: minmax(100vh, auto);
+    width: auto;
+}
+
+#banner{
+    background-color: bisque;
+    grid-area: banner;
+    width: 100%;
+    height: 75px;
+}
+
+#sidebar{
+    background-color: aqua;
+    grid-area: sidebar;
+    padding-left: 10px;
+    color: slateblue;
+    line-height: 2em;
+    position: fixed;
+    height: 100%;
+    width: 90px;
+}
+
+#main{
+    background-image: linear-gradient(palevioletred, white);
+    grid-area: main;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "pic"
+        "desc"
+        "logo"
+        "cards"
+        "desc2"
+        "pic2"
+        "endp"
+    ;
+    height: minmax(100vh, auto);
+}
+
+#footer{
+    grid-area: ft;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 2px solid darkgray;
+}
+
+#mainpic{
+    grid-area: pic;
+    border: 10px dotted pink;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:200px;
+    height: auto;
+}
+
+#desc{
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    grid-area: logo;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    height: auto;
+}
+
+#cards{
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#desc2{
+    grid-area: desc2;
+    justify-content: center;
+    margin: 20px;
+    word-wrap: break-word;
+}
+
+#endp{
+    grid-area: endp;
+    margin: 15px;
+}
+
+/*guide page styling*/
+#g_homepage{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 10em auto;
+    grid-template-rows: 75px auto;
+    grid-template-areas: 
+        "gsidebar gbanner"
+        "gsidebar gmain"
+        "gsidebar gft"
+    ;
+    height: minmax(100vh, auto);
+}
+
+#g_banner{
+    background-color: bisque;
+    grid-area: gbanner;
+    width: 100%;
+    height: 75px;
+}
+
+#g_sidebar{
+    background-color: aqua;
+    grid-area: gsidebar;
+    padding-left: 10px;
+    color: slateblue;
+    line-height: 2em;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+}
+
+#g_main{
+    background-image: linear-gradient(palevioletred, white);
+    grid-area: gmain;
+    height: minmax(100vh, auto);
+}
+
+#g_footer{
+    grid-area: gft;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 2px solid darkgray;
+}
+
+/*blog/ side page styling*/
+#b_homepage{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 75px auto;
+    grid-template-areas: 
+        "bsidebar bbanner"
+        "bsidebar bmain"
+        "bsidebar bft"
+    ;
+    height: minmax(100vh, auto);
+}
+
+#b_banner{
+    background-color: bisque;
+    grid-area: bbanner;
+    width: 100%;
+    height: 75px;
+}
+
+#b_sidebar{
+    background-color: aqua;
+    grid-area: bsidebar;
+    padding-left: 10px;
+    color: slateblue;
+    line-height: 2em;
+    position: fixed;
+    height: 100%;
+    width: 90px;
+}
+
+#b_main{
+    background-image: linear-gradient(palevioletred, white);
+    grid-area: bmain;
+    height: minmax(100vh, auto);
+    display: flex;
+    flex-direction: column;
+}
+
+#b_footer{
+    grid-area: bft;
+    height: 50px;;
+    width: minmax(100vh, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 2px solid darkgray;
+}
+/*------------------------------------*/
+
+/*MEDIUM SIZED SCREENS*/
+@media (min-width: 720px) and (max-width: 977px) {
+    /*med screen tag styling*/
+    /*nothing new*/
+    
+    /*index page styling*/
+    #homepage{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+            "sidebar banner"
+            "sidebar main"
+            "sidebar ft"
+        ;
+        height: minmax(100vh, auto);
+        width: auto;
+    }
+    
+
+    #banner{
+        background-color: bisque;
+        grid-area: banner;
+        width: 100%;
+        height: 100px;
+    }
+
+    #sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 90px;
+    }
+
+    #main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: main;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "pic pic desc desc"
+            "desc desc desc desc"
+            "logo logo logo logo"
+            "cards cards cards cards"
+            "cards cards cards cards"
+            "desc2 desc2 desc2 pic2"
+            "endp endp endp endp"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #footer{
+        grid-area: ft;
+        height: 50px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+
+    #mainpic{
+        grid-area: pic;
+        border: 15px dotted pink;
+        margin: 20px auto 5px;
+        width: 50%;
+    }
+    
+    #desc{
+        grid-area: desc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    #logo{
+        grid-area: logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #cards{
+        grid-area: cards;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    #desc2{
+        grid-area: desc2;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #pic2{
+        margin-top: 0px;
+        grid-area: pic2;
+        padding-right: 20px;
+        width: 30%;
+    }
+    
+    #endp{
+        grid-area: endp;
+    }
+    /*guide page styling*/
+    #g_homepage{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 10em auto;
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+            "gsidebar gbanner"
+            "gsidebar gmain"
+            "gsidebar gft"
+        ;
+        height: minmax(100vh, auto);
+    }
+    
+    #g_banner{
+        background-color: bisque;
+        grid-area: gbanner;
+        width: 100%;
+        height: 100px;
+    }
+    
+    #g_sidebar{
+        background-color: aqua;
+        grid-area: gsidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 150px;
+    }
+    
+    #g_main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: gmain;
+        height: minmax(100vh, auto);
+    }
+    
+    #g_footer{
+        grid-area: gft;
+        height: 50px;;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+    
+   /*blog/ side page styling*/
+   #b_homepage{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+            "bsidebar bbanner"
+            "bsidebar bmain"
+            "bsidebar bft"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #b_banner{
+        background-color: bisque;
+        grid-area: bbanner;
+        width: 100%;
+        height: 100px;
+    }
+
+    #b_sidebar{
+        background-color: aqua;
+        grid-area: bsidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 90px;
+    }
+
+    #b_main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: bmain;
+        height: minmax(100vh, auto);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #b_footer{
+        grid-area: bft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+}
+
+/*LARGEST SCREEN SIZE*/
+@media (min-width: 978px) {
+    /*large screen tag styling*/
+    p{
+        text-indent: 25px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    /*index page styling*/
+    #homepage{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 120px auto;
+        grid-template-areas: 
+            "sidebar banner"
+            "sidebar main"
+            "sidebar ft"
+        ;
+        height: minmax(100vh, auto);
+        width: auto;
+    }
+
+    #banner{
+        background-color: bisque;
+        grid-area: banner;
+        width: 100%;
+        height: 120px;
+    }
+
+    #sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 90px;
+    }
+
+    #main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: main;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: 
+            "pic pic desc desc"
+            "logo logo logo logo"
+            "cards cards cards cards"
+            "desc2 desc2 desc2 pic2"
+            "endp endp endp endp"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #footer{
+        grid-area: ft;
+        height: 50px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+
+    #mainpic{
+        grid-area: pic;
+        border: 10px dotted pink;
+        margin: 20px 25px 0px;
+        width: 80%;
+    }
+    
+    #desc{
+        grid-area: desc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #logo{
+        grid-area: logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #cards{
+        grid-area: cards;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    
+    #desc2{
+        grid-area: desc2;
+    }
+    
+    #pic2{
+        grid-area: pic2;
+        padding-right: 20px;
+        width: 200px;
+    }
+    
+    #endp{
+        grid-area: endp;
+    }
+    
+    /*guide page styling*/
+    #g_homepage{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 10em auto;
+        grid-template-rows: 120px auto;
+        grid-template-areas: 
+            "gsidebar gbanner"
+            "gsidebar gmain"
+            "gsidebar gft"
+        ;
+        height: minmax(100vh, auto);
+    }
+    
+    #g_banner{
+        background-color: bisque;
+        grid-area: gbanner;
+        width: 100%;
+        height: 120px;
+    }
+    
+    #g_sidebar{
+        background-color: aqua;
+        grid-area: gsidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 150px;
+    }
+    
+    #g_main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: gmain;
+        height: minmax(100vh, auto);
+    }
+    
+    #g_footer{
+        grid-area: gft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+
+    /*blog/side page styling*/
+    #b_homepage{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 120px auto;
+        grid-template-areas: 
+            "bsidebar bbanner"
+            "bsidebar bmain"
+            "bsidebar bft"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #b_banner{
+        background-color: bisque;
+        grid-area: bbanner;
+        width: 100%;
+        height: 120px;
+    }
+
+    #b_sidebar{
+        background-color: aqua;
+        grid-area: bsidebar;
+        padding-left: 10px;
+        color: slateblue;
+        line-height: 2em;
+        position: fixed;
+        height: 100%;
+        width: 90px;
+    }
+
+    #b_main{
+        background-image: linear-gradient(palevioletred, white);
+        grid-area: bmain;
+        height: minmax(100vh, auto);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #b_footer{
+        grid-area: bft;
+        height: 50px;;
+        width: minmax(100vh, auto);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-top: 2px solid darkgray;
+    }
+
+    /*specific format for about us page after 950px*/
+    #b_aboutpage{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "atext social"
+            "apic social"
+        ;
+        height: minmax(100vh, auto);
+    }
+
+    #b_atext{
+        grid-area: atext;
+        text-align: center;
+        
+    }
+
+    #b_apic{
+        grid-area: apic;
+    }
+
+    #b_social{
+        grid-area: social;
+        margin: 10px;
+    }
+}
