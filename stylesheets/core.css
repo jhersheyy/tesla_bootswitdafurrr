@@ -157,6 +157,10 @@ blockquote{
     word-wrap: break-word;
 }
 
+#pic2{
+    /*just does whatever for now*/
+}
+
 #endp{
     grid-area: endp;
     margin: 15px;
@@ -251,7 +255,7 @@ blockquote{
 
 #b_footer{
     grid-area: bft;
-    height: 50px;;
+    height: 50px;
     width: minmax(100vh, auto);
     display: flex;
     flex-direction: row;
@@ -320,33 +324,6 @@ blockquote{
         width: 90px;
     }
 
-    #main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: main;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-areas: 
-            "pic"
-            "desc"
-            "logo"
-            "cards"
-            "desc2"
-            "pic2"
-            "endp"
-        ;
-        height: minmax(100vh, auto);
-    }
-
-    #footer{
-        grid-area: ft;
-        height: 50px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border-top: 2px solid darkgray;
-    }
-
     #mainpic{
         grid-area: pic;
         border: 10px dotted pink;
@@ -355,41 +332,6 @@ blockquote{
         margin-top: 10px;
         width:200px;
         height: auto;
-    }
-
-    #desc{
-        grid-area: desc;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #logo{
-        grid-area: logo;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
-        height: auto;
-    }
-
-    #cards{
-        grid-area: cards;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    #desc2{
-        grid-area: desc2;
-        justify-content: center;
-        margin: 20px;
-        word-wrap: break-word;
-    }
-
-    #endp{
-        grid-area: endp;
-        margin: 15px;
     }
 
     /*guide page styling*/
@@ -406,13 +348,6 @@ blockquote{
         height: minmax(100vh, auto);
     }
 
-    #g_banner{
-        background-color: bisque;
-        grid-area: gbanner;
-        width: 100%;
-        height: 75px;
-    }
-
     #g_sidebar{
         background-color: aqua;
         grid-area: gsidebar;
@@ -422,21 +357,6 @@ blockquote{
         position: fixed;
         height: 100%;
         width: 150px;
-    }
-
-    #g_main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: gmain;
-        height: minmax(100vh, auto);
-    }
-
-    #g_footer{
-        grid-area: gft;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border-top: 2px solid darkgray;
     }
 
     /*blog/ side page styling*/
@@ -469,24 +389,6 @@ blockquote{
         position: fixed;
         height: 100%;
         width: 90px;
-    }
-
-    #b_main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: bmain;
-        height: minmax(100vh, auto);
-        display: flex;
-        flex-direction: column;
-    }
-
-    #b_footer{
-        grid-area: bft;
-        height: 50px;;
-        width: minmax(100vh, auto);
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border-top: 2px solid darkgray;
     }
 }
 /*------------------------------------*/
@@ -576,13 +478,6 @@ blockquote{
         margin: 10px;
     }
     
-    #logo{
-        grid-area: logo;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     #cards{
         grid-area: cards;
         display: flex;
@@ -604,10 +499,7 @@ blockquote{
         padding-right: 20px;
         width: 30%;
     }
-    
-    #endp{
-        grid-area: endp;
-    }
+
     /*guide page styling*/
     #g_homepage{
         display: grid;
@@ -640,21 +532,6 @@ blockquote{
         width: 150px;
     }
     
-    #g_main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: gmain;
-        height: minmax(100vh, auto);
-    }
-    
-    #g_footer{
-        grid-area: gft;
-        height: 50px;;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border-top: 2px solid darkgray;
-    }
-    
    /*blog/ side page styling*/
    #b_homepage{
         display: grid;
@@ -685,24 +562,6 @@ blockquote{
         position: fixed;
         height: 100%;
         width: 90px;
-    }
-
-    #b_main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: bmain;
-        height: minmax(100vh, auto);
-        display: flex;
-        flex-direction: column;
-    }
-
-    #b_footer{
-        grid-area: bft;
-        height: 50px;;
-        width: minmax(100vh, auto);
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border-top: 2px solid darkgray;
     }
 }
 
@@ -786,20 +645,6 @@ blockquote{
         width: 80%;
     }
     
-    #desc{
-        grid-area: desc;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #logo{
-        grid-area: logo;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     #cards{
         grid-area: cards;
         display: flex;
@@ -807,19 +652,17 @@ blockquote{
         justify-content: space-evenly;
         align-content: center;
     }
-    
+
+    /*
     #desc2{
         grid-area: desc2;
     }
-    
+    */
+
     #pic2{
         grid-area: pic2;
         padding-right: 20px;
         width: 200px;
-    }
-    
-    #endp{
-        grid-area: endp;
     }
     
     /*guide page styling*/
@@ -854,15 +697,9 @@ blockquote{
         width: 150px;
     }
     
-    #g_main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: gmain;
-        height: minmax(100vh, auto);
-    }
-    
     #g_footer{
         grid-area: gft;
-        height: 50px;;
+        height: 50px;
         width: minmax(100vh, auto);
         display: flex;
         flex-direction: row;
@@ -900,24 +737,6 @@ blockquote{
         position: fixed;
         height: 100%;
         width: 90px;
-    }
-
-    #b_main{
-        background-image: linear-gradient(palevioletred, white);
-        grid-area: bmain;
-        height: minmax(100vh, auto);
-        display: flex;
-        flex-direction: column;
-    }
-
-    #b_footer{
-        grid-area: bft;
-        height: 50px;;
-        width: minmax(100vh, auto);
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border-top: 2px solid darkgray;
     }
 
     /*specific format for about us page after 950px*/
