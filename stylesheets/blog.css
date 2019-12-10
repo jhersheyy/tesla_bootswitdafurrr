@@ -92,44 +92,13 @@
 #b_iglink{
     background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
 /*SMALL but not mini SIZED SCREEN*/
 @media (min-width: 453px) and (max-width: 719px) {
-    .b_spaceoutft{
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-
-    .b_pic{
-        width: 125px;
-        margin: auto;
-        padding: 10px;
-    }
-
-    .b_medpic{
-        width: 100px;
-        margin: auto;
-        padding: 10px;
-    }
-
-    .b_smallpic{
-        width: 75px;
-        margin: auto;
-        padding: 10px;
-    }
-
-    .b_logopic{
-        height: 1em;
-        width: auto;
-        padding: 2px;
-    }
-
     .b_sblink{
         text-align: center;
         color: slateblue;
@@ -144,67 +113,13 @@
         font-size: 1em;
     }
 
-    .b_imgcontainer4{
-        margin-left: 75px;
-        margin-right: auto;
-    }
-
-    .b_imgcontainer3{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .b_imgcontainer2{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 25px;
-        margin-right: auto;
-    }
-    
-    .b_imgcontainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-    }
-
     .b_manualindent{
         padding-left: 25px;
-    }
-
-    .b_centered{
-        text-align: center;
-    }
-
-    .b_verticalspace{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .b_blurb{
-        width: 70%;
-    }
-
-    #b_iglink{
-        background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 }
 
 /*MEDIUM SIZED SCREENS*/
 @media (min-width: 720px) and (max-width: 977px) {
-    .b_spaceoutft{
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-
     .b_pic{
         width: 200px;
         margin: auto;
@@ -221,12 +136,6 @@
         width: 100px;
         margin: auto;
         padding: 10px;
-    }
-
-    .b_logopic{
-        height: 1em;
-        width: 20px;
-        padding: 2px;
     }
 
     .b_sblink{
@@ -247,11 +156,6 @@
         margin-right: auto;
     }
 
-    .b_imgcontainer3{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .b_imgcontainer2{
         display: flex;
         flex-direction: row;
@@ -269,33 +173,13 @@
         padding-left: 25px;
     }
 
-    .b_verticalspace{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     .b_blurb{
         width: 50%;
-    }
-
-    #b_iglink{
-        background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 }
 
 /*LARGEST SIZED SCREENS*/
 @media (min-width: 978px){
-    .b_spaceoutft{
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-
     .b_pic{
         width: 300px;
         margin: auto;
@@ -312,12 +196,6 @@
         width: 150px;
         margin: auto;
         padding: 10px;
-    }
-
-    .b_logopic{
-        height: 1em;
-        width: auto;
-        padding: 2px;
     }
 
     .b_sblink{
@@ -338,11 +216,6 @@
         margin-right: auto;
     }
 
-    .b_imgcontainer3{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .b_imgcontainer2{
         display: flex;
         flex-direction: row;
@@ -360,20 +233,8 @@
         padding-left: 25px;
     }
 
-    .b_verticalspace{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     .b_blurb{
         text-align: justify;
         margin: auto;
-    }
-
-    #b_iglink{
-        background: -webkit-linear-gradient(left, rgb(1, 179, 233),rgb(131, 203, 224),  rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 }
