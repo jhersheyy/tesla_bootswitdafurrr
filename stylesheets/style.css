@@ -3,14 +3,14 @@
 @import url('guide.css');
 @import url('core.css');
 
-/*SMALLEST SIZED SCREENS: anything smaller than 720px*/
+/*SMALLEST SIZED SCREENS: anything smaller than 453*/
 .buttoncontainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     bottom: 10px;
-    right:20%;
+    right: 20%;
     left: 20%; 
 }
 
@@ -23,19 +23,19 @@
 }
 
 .pic{
-    width: 300px;
+    width: 180px;
     margin: auto;
     padding: 10px;
 }
 
 .medpic{
-    width: 250px;
+    width: 120px;
     margin: auto;
     padding: 10px;
 }
 
 .smallpic{
-    width: 150px;
+    width: 100px;
     margin: auto;
     padding: 10px;
 }
@@ -54,6 +54,7 @@
 .sblink{
     text-align: center;
     color: slateblue;
+    font-size: 0.8em;
 }
 
 .selectedlink{
@@ -61,6 +62,7 @@
     text-align: center;
     color: rgb(104, 5, 170);
     font-weight: 800;
+    font-size: 0.8em;
 }
 
 .prettytext2{
@@ -94,16 +96,18 @@
 
 .breederimg{
     height: auto;
-    width: 300px;
+    width: 100%;
+
 }
 
 .card{
     border: 5px solid white;
     border-radius: 10%;
-    height: 420px;
-    width: 250px;
+    height: 400px;
+    width: 180px;
     margin: 15px;
     position: relative;
+    font-size: 0.95em;
 }
 
 #carelink{
@@ -130,6 +134,140 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/*SMALL but not mini SIZED SCREEN*/
+@media (min-width: 453px) and (max-width: 719px) {
+    .buttoncontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+        left: 20%; 
+    }
+
+    .spaceoutft{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .pic{
+        width: 230px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .medpic{
+        width: 190px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .smallpic{
+        width: 120px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .logopic{
+        height: 1em;
+        width: auto;
+        padding: 2px;
+    }
+
+    .gif{
+        padding: 10px;
+        object-fit: scale-down;
+    }
+
+    .sblink{
+        text-align: center;
+        color: slateblue;
+        font-size: 1em;
+    }
+
+    .selectedlink{
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        color: rgb(104, 5, 170);
+        font-weight: 800;
+        font-size: 1em;
+    }
+
+    .prettytext2{
+        background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .center{
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+    }
+
+    .justifytext{
+        text-align: justify;
+    }
+
+    .minititle{
+        padding: 1px;
+        text-align: center;
+    }
+
+    .picborder{
+        border-radius: 10%;
+    }
+
+    .buttonborder{
+        border-radius: 15%;
+    }
+
+    .breederimg{
+        height: auto;
+        width: 100%;
+    }
+
+    .card{
+        border: 5px solid white;
+        border-radius: 10%;
+        height: 420px;
+        width: 250px;
+        margin: 15px;
+        position: relative;
+    }
+
+    #carelink{
+        background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
+    }
+
+    #blog1{
+        background-image: linear-gradient(to top left, white, aquamarine);
+    }
+
+    #blog2{
+        background-image: linear-gradient(to top left, white, plum);
+    }
+
+    #blog3{
+        background-image: linear-gradient(to top left, white, cornflowerblue);
+    }
+
+    #teslasfaves{
+        columns: 1;
+    }
+
+    #pic3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /*MEDIUM SIZED SCREENS*/
@@ -174,12 +312,14 @@
     .sblink{
         text-align: center;
         color: slateblue;
+        font-size: 1em;
     }
     
     .selectedlink{
         text-align: center;
         color: rgb(104, 5, 170);
         font-weight: 800;
+        font-size: 1em;
     }
     
     .prettytext2{
@@ -287,12 +427,14 @@
     .sblink{
         text-align: center;
         color: slateblue;
+        font-size: 1em;
     }
     
     .selectedlink{
         text-align: center;
         color: rgb(104, 5, 170);
         font-weight: 800;
+        font-size: 1em;
     }
     
     .prettytext2{
