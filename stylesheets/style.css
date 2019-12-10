@@ -46,11 +46,6 @@
     padding: 2px;
 }
 
-.gif{
-    padding: 10px;
-    object-fit: scale-down;
-}
-
 .sblink{
     text-align: center;
     color: slateblue;
@@ -68,6 +63,7 @@
 .prettytext2{
     background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -139,24 +135,6 @@
 
 /*SMALL but not mini SIZED SCREEN*/
 @media (min-width: 453px) and (max-width: 719px) {
-    .buttoncontainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        bottom: 10px;
-        right: 20%;
-        left: 20%; 
-    }
-
-    .spaceoutft{
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
     .pic{
         width: 230px;
         margin: auto;
@@ -175,17 +153,6 @@
         padding: 10px;
     }
 
-    .logopic{
-        height: 1em;
-        width: auto;
-        padding: 2px;
-    }
-
-    .gif{
-        padding: 10px;
-        object-fit: scale-down;
-    }
-
     .sblink{
         text-align: center;
         color: slateblue;
@@ -200,40 +167,6 @@
         font-size: 1em;
     }
 
-    .prettytext2{
-        background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .center{
-        display: flex;
-        align-content: space-between;
-        flex-direction: column;
-    }
-
-    .justifytext{
-        text-align: justify;
-    }
-
-    .minititle{
-        padding: 1px;
-        text-align: center;
-    }
-
-    .picborder{
-        border-radius: 10%;
-    }
-
-    .buttonborder{
-        border-radius: 15%;
-    }
-
-    .breederimg{
-        height: auto;
-        width: 100%;
-    }
-
     .card{
         border: 5px solid white;
         border-radius: 10%;
@@ -241,32 +174,6 @@
         width: 250px;
         margin: 15px;
         position: relative;
-    }
-
-    #carelink{
-        background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
-    }
-
-    #blog1{
-        background-image: linear-gradient(to top left, white, aquamarine);
-    }
-
-    #blog2{
-        background-image: linear-gradient(to top left, white, plum);
-    }
-
-    #blog3{
-        background-image: linear-gradient(to top left, white, cornflowerblue);
-    }
-
-    #teslasfaves{
-        columns: 1;
-    }
-
-    #pic3{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -298,17 +205,6 @@
         padding: 10px;
     }
     
-    .logopic{
-        height: 1em;
-        width: auto;
-        padding: 2px;
-    }
-    
-    .gif{
-        padding: 10px;
-        object-fit: scale-down;
-    }
-    
     .sblink{
         text-align: center;
         color: slateblue;
@@ -322,31 +218,6 @@
         font-size: 1em;
     }
     
-    .prettytext2{
-        background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .center{
-        display: flex;
-        align-content: space-between;
-        flex-direction: column;
-    }
-    
-    .justifytext{
-        text-align: justify;
-    }
-    
-    .minititle{
-        padding: 1px;
-        text-align: center;
-    }
-    
-    .picborder{
-        border-radius: 10%;
-    }
-    
     .breederimg{
         width: 450px;
     }
@@ -357,22 +228,6 @@
         height: 435px;
         width: 42%;
         margin: 15px;
-    }
- 
-    #carelink{
-        background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
-    }
-    
-    #blog1{
-        background-image: linear-gradient(to top left, white, aquamarine);
-    }
-    
-    #blog2{
-        background-image: linear-gradient(to top left, white, plum);
-    }
-    
-    #blog3{
-        background-image: linear-gradient(to top left, white, cornflowerblue);
     }
 
     #teslasfaves{
@@ -413,17 +268,6 @@
         padding: 10px;
     }
     
-    .logopic{
-        height: 1em;
-        width: auto;
-        padding: 2px;
-    }
-    
-    .gif{
-        padding: 10px;
-        object-fit: scale-down;
-    }
-    
     .sblink{
         text-align: center;
         color: slateblue;
@@ -437,31 +281,6 @@
         font-size: 1em;
     }
     
-    .prettytext2{
-        background: -webkit-repeating-linear-gradient(left, rgb(51, 24, 114), #91006c,  rgb(175, 19, 19));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .center{
-        display: flex;
-        align-content: space-between;
-        flex-direction: column;
-    }
-    
-    .justifytext{
-        text-align: justify;
-    }
-    
-    .minititle{
-        padding: 1px;
-        text-align: center;
-    }
-    
-    .picborder{
-        border-radius: 10%;
-    }
-    
     .breederimg{
         width: 550px;
     }
@@ -472,22 +291,6 @@
         height: 500px;
         width: 20%;
         margin: 15px;
-    }
-    
-    #carelink{
-        background-image: linear-gradient(to top left, white, rgb(243, 220, 93));
-    }
-    
-    #blog1{
-        background-image: linear-gradient(to top left, white, aquamarine);
-    }
-    
-    #blog2{
-        background-image: linear-gradient(to top left, white, plum);
-    }
-    
-    #blog3{
-        background-image: linear-gradient(to top left, white, cornflowerblue);
     }
     
     #teslasfaves{
