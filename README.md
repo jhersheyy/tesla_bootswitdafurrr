@@ -1,10 +1,10 @@
-# udacity_p1
+# Tesla: Boots wit da furr website (udacity_p1)
 udacity project 1
-its my first webdev project, so its a mess im sorry.
+Hi! It's my first web dev project, a static html/css webpage, so it's a bit of a mess- I'm sorry.
 
 There are three directories, one for pictures used in the project or considered for use at least, one for stylesheets (css), 
 and one for content pages (html)
 
-resizeable down to 561px
+The page is responsive & resizeable down to 561px.
 
-dedicated to my homedawg, tesla (literally a dog in my home)
+Dedicated to my homedawg, tesla (literally a dog in my home) <3
